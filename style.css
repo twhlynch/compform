@@ -1,0 +1,84 @@
+#index {
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1rem;
+}
+
+#index a {
+    width: fit-content;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+#index > span {
+    margin-left: auto;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+}
+#index a:hover {
+    color: var(--fg-super);
+}
+
+main:has(#index) {
+    display: grid;
+    place-content: center;
+}
+
+.nav-buttons {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.generative {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--fg);
+}
+
+button:not(.to-top) {
+    border: none;
+}
+
+button:not(.to-top):hover {
+    color: var(--fg-super);
+}
+
+.controls {
+    user-select: none;
+    -moz-user-select: none;
+}
+
+footer {
+    opacity: 1;
+    color: var(--fg-light);
+    cursor: default;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer a:hover {
+    color: var(--fg-super);
+}
+
+p {
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    z-index: -1;
+    opacity: 0.3;
+    pointer-events: none;
+}
