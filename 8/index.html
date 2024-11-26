@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>twhlynch • generative art</title>
 
-    <meta name="description" content="Generative art.">
+    <meta name="description" content="Generative art">
     <meta name="keywords" content=".index index dotindex tom lynch twhlynch grab grabvr vr mods modding discord tools programming coding website development developer github">
     <meta name="author" content="twhlynch">
 
     <meta property="og:title" content="twhlynch • generative art">
-    <meta property="og:description" content="Generative art.">
+    <meta property="og:description" content="Generative art">
     <meta property="og:site_name" content="twhlynch • generative art">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@twhlynch">
     <meta name="twitter:title" content="twhlynch">
-    <meta name="twitter:description" content="Generative art.">
+    <meta name="twitter:description" content="Generative art">
     <meta name="twitter:creator" content="@twhlynch">
     <meta name="twitter:image" content="http://twhlynch.me/favicon.png">
     <meta name="twitter:url" content="http://twhlynch.me">
@@ -40,18 +40,14 @@
     </script>
 
     <link rel="stylesheet" href="https://twhlynch.me/style.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <script src="/7/script.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="/8/script.js" defer></script>
 </head>
 <body>
     <header>
-        <button class="to-top" id="toTop" aria-label="Scroll to top">
-            <div class="icon i-arrow-up"></div>
-        </button>
         <nav>
             <div class="nav-buttons">
-                <a href="https://twhlynch.me"><span>Home</span></a>
+                <a href="/"><span>Back</span></a>
                 <a href="https://github.com/twhlynch/gen">
                     <div class="icon" aria-label="Github"></div>
                 </a>
@@ -59,19 +55,14 @@
         </nav>
     </header>
     <main>
-        <section id="index">
-            <span>1. </span><a href="/1">Branching</a>
-            <span>2. </span><a href="/2">Boids</a>
-            <span>3. </span><a href="/3">Breadth</a>
-            <span>4. </span><a href="/4">Record</a>
-            <span>5. </span><a href="/5">Leaf</a>
-            <span>6. </span><a href="/6">Heat</a>
-            <span>7. </span><a href="/7">Circuit</a>
-            <span>8. </span><a href="/8">Thom 1</a>
-            <span>9. </span><a href="/9">Chaos</a>
-            <span>10. </span><a href="/10">Noise</a>
-        </section>
+        <p>Thom 1</p>
+        <canvas class="generative" id="renderer" width="1000" height="1000"></canvas>
+        <div class="controls">
+            <button id="count">count: <span>3</span></button>
+        </div>
     </main>
-    <canvas id="renderer" class="background"></canvas>
+    <footer>
+        <a href="/7">7</a> <span>8</span> <a href="/9">9</a>
+    </footer>
 </body>
 </html>
